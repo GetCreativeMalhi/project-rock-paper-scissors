@@ -38,34 +38,18 @@ function playGame () {
     //  FUNCTION playRound here takes human and computer choices as arguments 
     function playRound(humanChoice, computerChoice) {
         console.log(`Your Chose: ${humanChoice}, Computer Chose: ${computerChoice}`)
-        if (humanSelection === "rock" && computerSelection === "scissors"){
-            humanScore++;
-            console.log("You win! Rock beats Scissors");
-        } else if (humanSelection === "scissors" && computerSelection === "paper"){
-            humanScore++;
-            console.log("You win! Scissors beats Paper");
-        } else if (humanSelection === "paper" && computerSelection ==="rock"){
-            humanScore++;
-            console.log("You win! Paper beats Rock");
-        } else if (humanSelection === "scissors" && computerSelection === "rock"){
-            computerScore++;
-            console.log("You lose! Rock beats Scissors");
-        }else if (humanSelection === "paper" && computerSelection === "scissors"){
-            computerScore++;
-            console.log("You lose! Scissors beats Paper");
-        } else if (humanSelection === "rock" && computerSelection ==="paper"){
-            computerScore++;
-            console.log("You lose! Paper beats Rock");
-        }  else if (humanSelection === "rock" && computerSelection ==="rock"){
+        if (humanSelection === computerSelection){
             drawScore++;
             console.log("Thats Draw, Play again");
-        }  else if (humanSelection === "paper" && computerSelection ==="paper"){
-            drawScore++;
-            console.log("Thats Draw, Play again");
-        }  else if (humanSelection === "scissors" && computerSelection ==="scissors"){
-            drawScore++;
-            console.log("Thats Draw, Play again");
-        }  
+        }else if ((humanSelection === "rock" && computerSelection === "scissors") || 
+                (humanSelection === "scissors" && computerSelection === "paper") ||
+                (humanSelection === "paper" && computerSelection ==="rock")){
+            humanScore++;
+            console.log(`You win! ${humanSelection} beats ${computerChoice}`);
+        } else {
+            computerScore++;
+            console.log(`You lose! ${computerSelection} beats ${humanSelection}`);
+        }
     }
     // console.log(`Your Score: ${humanScore}, Computer Score: ${computerScore}, Draw Score ${drawScore}`)
 
