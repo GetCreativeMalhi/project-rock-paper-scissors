@@ -1,7 +1,7 @@
 # 🌐 Project Rock Paper Scissor
 
-Rock Paper Scissor game in a simple static webpage using **HTML** and **JavaScript**.  
-This project demonstrates basic web structure, semantic HTML,and knowledge of basic JavaScript.
+Rock Paper Scissor game in a simple static webpage developed using **HTML** and **JavaScript** which is played through console window in Dev Tools.  
+This project demonstrates basic knowledge of basic JavaScript and Dev Tools.
 
 ---
 
@@ -15,7 +15,6 @@ This project demonstrates basic web structure, semantic HTML,and knowledge of ba
 ## 🛠️ Technologies Used
 
 - 🌐 HTML5
-- 🎨 CSS3
 - 📦 JavaScript
 
 ---
