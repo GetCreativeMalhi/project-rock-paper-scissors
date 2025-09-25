@@ -30,12 +30,12 @@ This project demonstrates fundamental JavaScript concepts and basic usage of bro
 
 ## 🎮 How to Play
 
-1. Open `index.html` in your browser.
-2. Open **Dev Tools**:
-   - Chrome: `Ctrl + Shift + J` (Windows/Linux) or `Cmd + Option + J` (Mac)
-   - Firefox: `Ctrl + Shift + K` (Windows/Linux) or `Cmd + Option + K` (Mac)
-3. Type your choice (`Rock`, `Paper`, or `Scissors`) when prompted in the console.
-4. The computer makes a random choice, and the winner is displayed in the console.
+    1.	Open https://getcreativemalhi.github.io/project-rock-paper-scissors/ in your browser.
+    2.	Click one of the buttons (Rock, Paper, or Scissors) to make your choice.
+    3.	The computer will automatically make a random choice.
+    4.	Round results and updated scores will be displayed on the page.
+    5.	First to 5 points wins the game! 🎉
+    6.	A status message will show the outcome (“Congratulations, You have won!” or “Game Over: Computer wins 😞”).
 
 ---
 
