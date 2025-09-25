@@ -1,6 +1,6 @@
 # 🌐 Rock Paper Scissors
 
-A simple **Rock Paper Scissors** game built using **HTML** and **JavaScript**, playable through the browser’s developer console.  
+A simple **Rock Paper Scissors** game built using **HTML**, **CSS3** and **JavaScript**, playable through the browser’s developer console.  
 This project demonstrates fundamental JavaScript concepts and basic usage of browser Dev Tools.
 
 ---
@@ -8,6 +8,7 @@ This project demonstrates fundamental JavaScript concepts and basic usage of bro
 ## 📌 Features
 
 - Semantic **HTML5** structure (`<header>`, `<main>`, `<footer>`)
+- Game styles and layout implemented with **CSS3**
 - Game logic implemented in **JavaScript**
 - Interactive play via the **console**
 
@@ -16,6 +17,7 @@ This project demonstrates fundamental JavaScript concepts and basic usage of bro
 ## 🛠️ Technologies Used
 
 - 🌐 HTML5
+- 🎨 CSS3
 - 📦 JavaScript (ES6)
 
 ---
@@ -23,6 +25,7 @@ This project demonstrates fundamental JavaScript concepts and basic usage of bro
 ## 📂 Project Structure
 
 ├── index.html # Main HTML file
+├── style.css # Styles and layout
 ├── script.js # Game logic
 └── README.md # Project documentation
 
