@@ -51,18 +51,18 @@ const buttons = document.querySelectorAll('button');
             humanTotal += human;
             computerTotal += computer;
             const total = document.querySelector('.totalPara');
-            total.textContent = `Total → Draw:${drawTotal} You:${humanTotal} Computer:${computerTotal}  `;
+            total.textContent = `Total Score → You: ${humanTotal}  •  Computer: ${computerTotal}  `;
             
             if (humanTotal >= 5){
                 winnerPara.textContent = "🎉 Congratulations, You have won!"
-                total.textContent = `Total → Draw:${drawTotal} You:${humanTotal} Computer:${computerTotal}  `;
+                total.textContent = `Total Score → You: ${humanTotal}  •  Computer: ${computerTotal}  `;
                 humanTotal = 0;
                 computerTotal = 0;
                 drawTotal = 0;
                 
             } else if (computerTotal >= 5){
                 winnerPara.textContent = "💻 Game Over: Computer wins! 😭"
-                total.textContent = `Total → Draw:${drawTotal} You:${humanTotal} Computer:${computerTotal}  `;
+                total.textContent = `Total Score → You: ${humanTotal}  •  Computer: ${computerTotal}  `;
                 humanTotal = 0;
                 computerTotal = 0;
                 drawTotal = 0;
