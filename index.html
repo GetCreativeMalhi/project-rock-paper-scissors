@@ -5,20 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
+        <div class="heading">
+            <h1>🎮 Rock Paper Scissors</h1>
+            <p>*Score 5 to win a Game*</p>
+        </div>
         <div class="btnContainer">
             <button class="btnSelection">Rock</button>
             <button class="btnSelection">Paper</button>
             <button class="btnSelection">Scissors</button>
         </div>
-        <div class="result">
-            <p>Score 5 to win a Game</p>
-            <p class="resultPara"></p>
-
+        <div class="display">
+            <div class="selection">
+                <h2 class="selectionHeading">Make your selection</h2>
+            </div>
+            <div class="results">
+                <!-- <div class="score">
+                    <p>Draw: 0 • You: 0 • Computer: 0</p>
+                </div> -->
+                <div class="result">
+                    <p class="resultPara"></p>
+                </div>
+                <div class="result">
+                    <h4 class="totalPara"></h4>
+                </div>
+            </div>
+            <div class="winner">
+                <p class="winnerPara"></p>
+            </div>
         </div>
     </div>
 </body>

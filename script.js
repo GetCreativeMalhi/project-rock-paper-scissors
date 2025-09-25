@@ -54,11 +54,41 @@ function playRound(humanChoice, computerChoice) {
 // FUNCTION playGame function that calculates score for five games and declares winner
 
 const buttons = document.querySelectorAll('button');
+            let drawTotal = 0;
+            let humanTotal = 0;
+            let computerTotal = 0;
     buttons.forEach(button =>{
         button.addEventListener('click', (e) => {
-        const [draw, human, computer] = playRound(getComputerChoice(), getHumanChoice(e));
-        
-        const result = document.querySelector('.resultPara');
-        result.textContent = `Round complete: Draw Score: ${draw} Human Score: ${human} Computer Score: ${computer}`;
+            // const selection = document.querySelector('.selection');
+            // selection.remove();
+            // const score = document.querySelector('.score');
+            // score.remove();
+            const winnerPara = document.querySelector('.winnerPara');
+            winnerPara.textContent = "⚔️ Game On: Let’s Play!"
+            const [draw, human, computer] = playRound(getComputerChoice(), getHumanChoice(e));
+            const result = document.querySelector('.resultPara');
+            result.textContent = `Round → Draw: ${draw}  •  You: ${human}  •  Computer: ${computer}`;
+            drawTotal += draw;
+            humanTotal += human;
+            computerTotal += computer;
+            const total = document.querySelector('.totalPara');
+            total.textContent = `Total → Draw:${drawTotal} You:${humanTotal} Computer:${computerTotal}  `;
+            
+            if (humanTotal >= 5){
+                winnerPara.textContent = "🎉 Congratulations, You have won!"
+                total.textContent = `Total → Draw:${drawTotal} You:${humanTotal} Computer:${computerTotal}  `;
+                humanTotal = 0;
+                computerTotal = 0;
+                drawTotal = 0;
+                
+            } else if (computerTotal >= 5){
+                winnerPara.textContent = "💻 Game Over: Computer wins! 😭"
+                total.textContent = `Total → Draw:${drawTotal} You:${humanTotal} Computer:${computerTotal}  `;
+                humanTotal = 0;
+                computerTotal = 0;
+                drawTotal = 0;
+            }
         });
+                
+            
     });
